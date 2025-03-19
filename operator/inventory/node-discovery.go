@@ -37,9 +37,10 @@ var (
 
 	labelNvidiaComGPUPresent = fmt.Sprintf("%s.present", builder.ResourceGPUNvidia)
 )
-var ( gpuModelAlias = map[string]string{
-    "rtx4080super": "rtx4080s",
-    // add other mappings as needed
+var (  
+	gpuModelAlias = map[string]string{
+        "rtx4080super": "rtx4080s",
+        // add other mappings as needed
 }
 type k8sPatch struct {
 	Op    string      `json:"op"`
